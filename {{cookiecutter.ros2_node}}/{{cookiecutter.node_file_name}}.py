@@ -14,7 +14,7 @@ class {{cookiecutter.node_class_name}}(Node):
         self.get_logger().info(text)
 
 
-def main(*args):
+def main(args=None):
     rclpy.init(args=args)
     node = {{cookiecutter.node_class_name}}()
     try:
